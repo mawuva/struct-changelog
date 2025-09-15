@@ -83,8 +83,6 @@ dmypy.json
 
 .ruff_cache/
 
-examples/
-
 # MkDocs build
 /site/
 
