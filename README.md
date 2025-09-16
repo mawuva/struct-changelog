@@ -342,4 +342,4 @@ The helper approaches provide convenience without these issues.
 
 ## License
 
-MIT License - see LICENSE file for details.
+MIT License - see [LICENCE](LICENSE) file for details.
