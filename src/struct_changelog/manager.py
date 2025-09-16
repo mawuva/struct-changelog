@@ -129,7 +129,9 @@ class _CaptureContext:
         self.before = copy.deepcopy(self.original_data)
         return self.original_data
 
-    def __exit__(self, exc_type, exc_val, exc_tb) -> None:  # type: ignore
+    def __exit__(
+        self, exc_type: Any, exc_val: Any, exc_tb: Any
+    ) -> None:  # mypy: ignore-errors
         """
         Exit the context: compute differences and populate the changelog.
 
@@ -151,10 +153,14 @@ class _CaptureContext:
             visited (Set[int]): Set of object ids already visited (to prevent circular references).
         """
         # Prevent infinite recursion for circular references
-        if id(before) in visited or id(after) in visited:
-            return
-        visited.add(id(before))
-        visited.add(id(after))
+        # Only check for circular references when we're about to recurse into containers
+        if isinstance(before, (dict, list, tuple)) and isinstance(
+            after, (dict, list, tuple)
+        ):
+            if id(before) in visited or id(after) in visited:
+                return
+            visited.add(id(before))
+            visited.add(id(after))
 
         # If types differ, record as edited
         if not isinstance(after, type(before)):
