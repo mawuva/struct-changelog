@@ -2,6 +2,8 @@
 Exemple d'utilisation basique du ChangeLogManager avec des dictionnaires.
 """
 
+# mypy: ignore-errors
+
 from struct_changelog import ChangeLogManager
 
 

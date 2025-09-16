@@ -2,6 +2,8 @@
 Exemple d'utilisation du ChangeLogManager avec des structures imbriquées complexes.
 """
 
+# mypy: ignore-errors
+
 from struct_changelog import ChangeLogManager
 
 

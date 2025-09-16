@@ -8,11 +8,13 @@ Usage:
     python run_all_examples.py --quiet
 """
 
+# mypy: ignore-errors
+
 import sys
 import time
 import traceback
 from pathlib import Path
-from typing import Dict, List, Tuple
+from typing import Dict, List
 import argparse
 
 

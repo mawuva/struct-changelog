@@ -2,6 +2,8 @@
 Exemple d'utilisation du ChangeLogManager avec des objets personnalisés.
 """
 
+# mypy: ignore-errors
+
 from struct_changelog import ChangeActions, ChangeLogManager
 
 

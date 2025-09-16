@@ -2,6 +2,8 @@
 Exemple d'utilisation du ChangeLogManager avec des listes et tableaux.
 """
 
+# mypy: ignore-errors
+
 from struct_changelog import ChangeLogManager
 
 

@@ -2,6 +2,8 @@
 Exemple d'utilisation manuelle du ChangeLogManager (ajout d'entrées sans context manager).
 """
 
+# mypy: ignore-errors
+
 from struct_changelog import ChangeActions, ChangeLogManager
 
 

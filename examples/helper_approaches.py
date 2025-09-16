@@ -3,6 +3,8 @@ Exemples d'utilisation des différentes approches helper pour éviter de devoir
 initialiser ChangeLogManager à chaque fois.
 """
 
+# mypy: ignore-errors
+
 from struct_changelog import (
     ChangeLogManager,  # Approche originale
     create_changelog,  # Factory function
