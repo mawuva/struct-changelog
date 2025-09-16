@@ -3,7 +3,8 @@
 [![CI](https://github.com/mawuva/struct-changelog/actions/workflows/ci.yml/badge.svg)](https://github.com/mawuva/struct-changelog/actions/workflows/ci.yml)
 [![PyPI](https://img.shields.io/pypi/v/struct-changelog.svg)](https://pypi.org/project/struct-changelog/)
 [![Python Version](https://img.shields.io/pypi/pyversions/struct-changelog.svg)](https://pypi.org/project/struct-changelog/)
-[![License](https://img.shields.io/pypi/l/struct-changelog.svg)](https://pypi.org/project/struct-changelog/)
+![GitHub License](https://img.shields.io/github/license/mawuva/struct-changelog)
+
 
 ## What is Struct Changelog?
 
