@@ -16,7 +16,7 @@ packages = [{include = "struct_changelog", from = "src"}]
 exclude = ["examples*", "tests*"]
 
 [tool.poetry.group.dev.dependencies]
-pytest = "^8.4.2"
+pytest = "^9.0.0"
 pytest-cov = "^7.0.0"
 ruff = "^0.13.0"
 black = "^25.1.0"
